@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head >
+    <meta name="viewport" content="with=device-width, initial-scale=1.0 "> 
+    <title>Programmer profile website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/home.png "></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PROYECTS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Learning development never ends</h1>
+        <p>Hi! Welcome to my developer profile website.<br> My name is Pedro and I'm an IT developer with knowledge in different tecnologies.</p>
+        <br>
+        <a href="" class="hero-btn">Click here to know more about me</a>
+    </div>    
+    </section>
+
+    <!------- Proyects ------------------------->
+
+    <section>
+         
+    </section>
+
+    <!------ JavaScript for Toggle Menu -------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px"
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
