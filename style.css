@@ -388,7 +388,35 @@ position: relative;
 
 
 
+@media only screen and (min-width: 768px) {
+    
+    #projects .project-item{
+        flex-direction: row;
+    }
 
+    #projects .project-info h2{
+        font-size: 22px;
+        color: #f44336;
+    }
+   #projects .project-info p{
+       font-size: 16px;
+   }
+
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+
+    #projects .all-projects .project-img{
+height: 100%;
+    }
+}
 
 
 /*-------- CONTACT ----------*/
