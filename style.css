@@ -20,6 +20,8 @@ nav{
      align-items: center;
 }
 
+
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -53,19 +55,18 @@ nav{
 }
 
 .text-box{
-    width: 90%;
+    width: 30%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 20%;
     text-align: center;
-    padding-left: 50%;
+    padding-left: 20%;
 }
 
 .text-box h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 40px;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -184,17 +185,10 @@ nav .fas{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600px;
 }
 
-p{
-    color: #777;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
 
 .row{
     margin-top: 5%;
@@ -202,12 +196,16 @@ p{
     justify-content: space-between;
 }
 
+
+
+
 #presentation{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
+
 
 .project-col{
       flex-basis: 32%;
@@ -300,6 +298,96 @@ p{
   }
 }
 
+/******** Skills ****************/
+
+#skills{
+    padding-right: 10%;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    
+}
+
+.skills .skill-content{
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+
+
+.skills .skill-content .column{
+    width: calc(50% - 200px);
+}
+
+.skills .skill-content .left .text{
+font-size: 30px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.skills .skill-content .right .bars{
+    margin-bottom: 20px;
+}
+
+.skills .skill-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skill-content .right .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skill-content .right .line{
+    height: 5px;
+    width: 29%;
+    background: lightgrey;
+    position: absolute;
+}
+
+.skills .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skill-content .right .java::before{
+    width: 80%;
+}
+.skill-content .right .react::before{
+    width: 70%;
+}
+.skill-content .right .type::before{
+    width: 70%;
+}
+
+.skill-content .right .mysql::before{
+    width: 35%;
+}
+
+.skill-content .right .python::before{
+    width: 25%;
+}
+
+.skill-content .right .html::before{
+    width: 30%;
+}
+
 
 
 /******* projects **************/
@@ -308,6 +396,14 @@ p{
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+#presentation p{
+    color: crimson;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
 
 #projects .projects-header h1{
@@ -346,7 +442,7 @@ p{
 }
 
 #projects .project-info h1{
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 500;
 }
 
@@ -393,6 +489,8 @@ position: relative;
     #projects .project-item{
         flex-direction: row;
     }
+
+
 
     #projects .project-info h2{
         font-size: 22px;
